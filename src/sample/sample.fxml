@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextArea?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="628.0" prefWidth="816.0" xmlns="http://javafx.com/javafx/8.0.112" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.SampleController">
+   <children>
+      <AnchorPane prefHeight="138.0" prefWidth="816.0" style="-fx-background-color: #3D4956;">
+         <children>
+            <JFXButton fx:id="bSifriraj" buttonType="RAISED" layoutX="462.0" layoutY="45.0" mnemonicParsing="false" onAction="#sifriraj" prefHeight="49.0" prefWidth="149.0" style="-fx-background-color: eaa270;" text="ŠIFRIRAJ" />
+            <JFXButton fx:id="bDesifriraj" buttonType="RAISED" layoutX="635.0" layoutY="45.0" mnemonicParsing="false" onAction="#desifriraj" prefHeight="49.0" prefWidth="149.0" style="-fx-background-color: e7e7e7;" text="DEŠIFRIRAJ" />
+            <JFXButton fx:id="bIzberiBesedilo" layoutX="105.0" layoutY="10.0" mnemonicParsing="false" onAction="#odperiDatoteko" prefHeight="36.0" prefWidth="215.0" style="-fx-background-color: #525b6a; -fx-background-radius: 0.5em; -fx-border-radius: 0.5em;" text="Izberi tekstovno datoteko" textFill="#f0e7e6" />
+            <JFXTextField fx:id="tfKljuc" layoutX="105.0" layoutY="53.0" prefHeight="33.0" prefWidth="215.0" style="-fx-background-color: #434f5e; -fx-border-color: #55606f; -fx-text-fill: aliceblue" />
+            <Label layoutX="32.0" layoutY="58.0" prefHeight="21.0" prefWidth="77.0" text="Ključ:" textFill="#d7d7d7" />
+            <Label layoutX="32.0" layoutY="102.0" prefHeight="21.0" prefWidth="77.0" text="Abeceda:" textFill="#d7d7d7" />
+            <JFXTextField fx:id="tfAbeceda" editable="false" layoutX="105.0" layoutY="96.0" prefHeight="33.0" prefWidth="215.0" style="-fx-background-color: #434f5e; -fx-border-color: #55606f; -fx-text-fill: #c7d3dd">
+               <font>
+                  <Font size="13.0" />
+               </font></JFXTextField>
+         </children></AnchorPane>
+      <AnchorPane layoutY="144.0" prefHeight="484.0" prefWidth="816.0" style="-fx-background-color: #3D4956;">
+         <children>
+            <JFXTextArea fx:id="taVnosBesedila" layoutX="5.0" layoutY="25.0" prefHeight="176.0" prefWidth="805.0" style="-fx-background-color: #434f5e; -fx-border-color: #55606f; -fx-text-fill: aliceblue" />
+            <JFXTextArea fx:id="taIzhodBesedila" editable="false" layoutX="5.0" layoutY="245.0" prefHeight="176.0" prefWidth="805.0" style="-fx-background-color: #434f5e; -fx-border-color: #55606f; -fx-text-fill: aliceblue" />
+            <Label layoutX="371.0" layoutY="4.0" text="VAŠ VNOS" textFill="#f5f5ff">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font></Label>
+            <Label layoutX="352.0" layoutY="224.0" text="IZHODNI TEKST" textFill="#f5f5ff">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <!--<JFXButton buttonType="RAISED" layoutX="306.0" layoutY="439.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="204.0" onAction="#shraniBesedilo" style="-fx-background-color: #eaa270;" text="Shrani izhodno besedilo" />-->
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutY="138.0" prefHeight="6.0" prefWidth="816.0" style="-fx-background-color: #2c3743;" />
+   </children>
+</AnchorPane>
